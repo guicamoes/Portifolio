@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-image: url(https://gifs.eco.br/wp-content/uploads/2022/06/gifs-de-estrelas-caindo-19.gif);
+    background-size: cover;
+    color: rgb(250, 250, 250);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+}
+.content .nome{
+    font-size: 2.5rem;
+    margin-top: 1.25rem;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;    ;
+
+}
+.content .img-conhecimento:hover{
+    transform: rotateY(360deg);
+}
+.perfil {
+    border-radius: 50%;
+    justify-content: center;
+    transition: 1s;
+    width: 10rem;
+    text-align: center;
+}
+.content .paragrafo1 {
+    text-align: center;
+    max-width: 60%;
+}
+.content .paragrafo1 p{
+    font-size: 1.25rem;
+}
+.conhecimentos{
+    font-size: 200%;
+    text-align: center;
+}
+.conhecimentos img{
+    transition: 1s;
+}
+.conhecimentoslogo{
+    width: 9rem;
+    text-align: left;
+}
+.conhecimentoslua{
+    width: 9rem;
+    text-align: left;
+}
+.conhecimentoshtml{
+    width: 9rem;
+    text-align: left;
+}
+.conhecimentoscss{
+    width: 6rem;
+    text-align: left;
+}
+.conhecimentos span{
+    font-weight: bold;
+    margin-bottom: 1.875rem;
+    margin-top: 2.5rem;
+    display: block;
+}
+.redes{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3.125rem;
+    font-size: 200%;
+}
+.redes span{
+    font-weight: bold;
+    margin-bottom: 1.875rem;
+    
+}
+.redes .icons{
+    display: flex;
+    gap: 0.625rem;
+}
+.redes .icons .logosociais{
+    width: 50px;
+    transition: 0.3s; 
+}
+.redes .icons .logosociais:hover{
+    transform: translateY(-0.625rem);
+}
+footer {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+/* Mobile */
+@media only screen and (max-width:31.25rem){
+    .content .nome{
+        font-size: 1.875rem;
+    }
+    .content .paragrafo1 {
+        max-width: 90%;
+    }
+    .content .paragrafo1 p{
+        font-size: 1rem;
+    }
+    .conhecimentos span{
+        font-size: 1.25rem;
+        margin-bottom: 0.9375rem;
+    }
+    .redes span{
+        font-size: 20px;
+        margin-top: 0.9375rem;
+        margin-bottom: 0.9375rem;
+    }
+    .conhecimentos .img-conhecimento{
+        width: 2.1875rem;
+    }
+    .conhecimentos .img-conhecimentoc:nth-child(2){
+        width: 4.375rem;
+    }
+}
